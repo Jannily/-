@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>数据行分组</h1>
+    <hr />
+    <!-- 
+         如果设置表格的结构更清晰（后期传送数据），可以设置数据行分组
+
+         thead   表格的头部
+         tbody   表格的主体内容
+         tfoot   表格的底部
+         一个表格可以有多个tbody，但是只有一个thead和tfoot
+     -->
+
+    <table width="500px" height="300px" border="1" cellspacing="0">
+      <thead>
+        <tr>
+          <th colspan="5">个人简历</th>
+          <!-- <th></th>
+                <th></th>
+                <th></th>
+                <th></th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>姓名：</td>
+          <td width="100px"></td>
+          <td>性别：</td>
+          <td width="100px"></td>
+          <td rowspan="4" align="center">照片</td>
+        </tr>
+        <tr>
+          <td>婚姻状况：</td>
+          <td></td>
+          <td>出生年月：</td>
+          <td></td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td>名族：</td>
+          <td></td>
+          <td>政治面貌：</td>
+          <td></td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td>身高</td>
+          <td></td>
+          <td>学历</td>
+          <td></td>
+          <!-- <td></td> -->
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css声明和html属性的区别</title>
+    <style>
+        /* css声明设置样式，针对所有标签都管用
+        html标签自带的属性，只针对自己的标签有用，其他没有用这个属性的就不起作用 */
+        p {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>666666</p>
+    <p color="pink">嗷嗷嗷</p>
+</body>
+</html>

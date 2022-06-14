@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="http://www.baidu.com/s" target="_blank">
+      <input type="text" name="wd" />
+      <input type="submit" />
+    </form>
+
+    <form action="http://www.baidu.com" method="post" target="_blank">
+      账号 <input type="text" name="user" />
+      <!-- <input type="submit" /> -->
+      <button>提交按钮</button>
+    </form>
+
+    <!-- 
+        表单结构
+          form  创建表单结构
+          input 表单控件
+
+
+        form的属性
+            action   服务端地址
+            name     名字
+            target   设置打开方式
+            method   数据提交的方式
+                get  不安全，数据传输量小
+                post 数据传输量大
+
+        input的属性
+            type  input的显示类型
+            name  必须要写（数据提交）
+     -->
+  </body>
+</html>
