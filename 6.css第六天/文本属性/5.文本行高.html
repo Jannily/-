@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本行高</title>
+    <style>
+        .op {
+            width: 200px;
+            height: 200px;
+        }
+        p {
+            width: 300px;
+            height: 300px;
+            background: green;
+            line-height: 300px;
+            text-align: center;
+        }
+        em {
+            background: pink;
+            line-height: 20px;
+            display: inline-block;
+        }
+        /* line-height 行高
+               单位：px/em/倍数
+
+            1.多行文本的行间距，包含字体大小
+            2.单行文本垂直居中，行高等于盒子的高度
+            3.块元素清除行高，字体大小多少，行高就是多少 */
+    </style>
+</head>
+<body>
+    <!-- 多行文本的行高 -->
+    <div class="op">江南好风景旧曾谙江南好风景旧曾谙江南好风景旧曾谙江南好风景旧曾谙江南好风景旧曾谙江南好风景旧曾谙
+    </div>
+    <!-- 单行文本垂直居中 -->
+    <p>单行文本垂直居中</p>
+    <!-- 默认行高 -->
+    <em>行内块清除行高</em>
+</body>
+</html>

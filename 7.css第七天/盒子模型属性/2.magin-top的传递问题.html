@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magin-top的传递问题</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        width: 400px;
+        height: 400px;
+        background: #ccc;
+        /* border: 3px solid #000; */
+        /* padding-top: 1px; */
+        /* overflow: hidden; */
+      }
+      .box div {
+        width: 100px;
+        height: 100px;
+        font-size: 30px ;
+        border: 3px solid green;
+        background: yellowgreen;
+      }
+      .item1 {
+        margin-top: 50px;
+      }
+      .item2 {
+        margin-top: 50px;
+      }
+      .item3 {
+        margin-top: 30px;
+      }
+    </style>
+</head>
+<body>
+    <!-- magin-top的传递问题
+    如果父元素下的第一个子元素设置magin-top,会错误的传递给父元素
+
+    解决：
+      给父元素添加属性值：
+            boder 隔开
+            padding 隔开
+            overflow:hidden  -->
+           
+    <div class="box">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+</body>
+
+</html> 

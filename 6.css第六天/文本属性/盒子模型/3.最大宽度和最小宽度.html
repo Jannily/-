@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最大宽度和最小宽度</title>
+    <style>
+        div {
+            height: 200px;
+            margin: 20px;
+        }
+        .min {
+            min-width: 600px;
+            background: pink;
+        }
+        .max {
+            max-width: 600px;
+            background: yellow;
+        }
+        /* 最小宽：
+        min-width > 浏览器宽度 = min-width
+        min-width < 浏览器宽度 = 浏览器宽度
+
+        最大宽：
+        max-width > 浏览器宽度 = 浏览器宽度 
+        max-width < 浏览器宽度 = max-widt
+        */
+
+    </style>
+</head>
+<body>
+    <div class="min">min-width</div>
+    <div class="max">min-width</div>
+</body>
+</html>

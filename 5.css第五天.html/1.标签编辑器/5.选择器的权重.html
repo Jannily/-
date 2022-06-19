@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的权重</title>
+    <style>
+        /* 行内样式表 1000 >id 100 >class选择器 10 >标签选择器 1> 通配符选择器 0
+        选择的范围越大，权重越小
+
+        行内样式表：
+        权重相同，看顺序，谁在后面设置谁
+        属性相同，权重不同，看权重 */
+
+        /* id选择器 */
+        #red {
+            color: red;
+        }
+        /* class选择器 */
+        .yellow {
+            color: yellow;
+        }
+        /* 标签选择器 */
+        div {
+            color: green;
+        }
+        /* 通配符选择器 */
+        *{
+        color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="red" class="yellow" style="color:pink">红色</div>
+</body>
+</html>

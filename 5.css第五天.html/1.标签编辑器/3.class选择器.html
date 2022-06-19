@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class选择器</title>
+    <style>
+        #fan {
+           color: blue;
+        }
+        /* class与 . 相对应
+        css: #;
+        特点：
+        可以单独使用，也可以重复使用
+        高级用法：
+        class可以使用多个，用空格隔开，取后面的值
+        例如：<div class="wait come">我来了</div> */
+        .wait {
+            color: red;
+        }
+        .come {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="fan">吃点饭吧</div>
+    <div class="wait">等我</div>
+    <div class="wait come">我来了</div>
+</body>
+</html>

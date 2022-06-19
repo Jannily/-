@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块元素</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin: 100px;
+        }
+        p {
+            height: 200px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div>独占一行</div>
+    <div>
+        <p>块元素</p>
+    </div>
+    <p>没事</p>
+     
+    <!-- CSS分为三种元素：
+    块元素，行元素，行内块元素
+
+    块元素：
+    h1~h6,div,p,hr,pre,br,ul,li,ol,dl,dt,dd,from,fieldse,legend
+    特点：1.垂直显示，独占一行，可以换行
+         2.可以设置宽度和高度，
+         3.块元素一般可以可以包裹其他元素
+         特殊：h1~h6,p 不能嵌套块元素
+
+     行元素：
+     a,em,strong,ins,del，span，label
+     特点：1.水平显示，一行显示多个
+          2.元素宽高由内容撑开，不可以设置宽度和高度，只能设置水平方向的内边距和外边距， 
+          只显示左右
+          3.一般情况下行内元素不能嵌套块元素
+          特殊：a少数情况下会包裹div
+
+     行内块元素：
+     img,input,button
+     特点：1.水平显示，一行显示多个
+       2.可以设置宽度和高度，设置四个方向的内边距和外边距
+       3.行内元素不能嵌套块级元素
+
+       元素的转换：
+       diasplay:
+       block  块元素
+       inline  行内元素
+       inline-bilock  行内块元素 -->
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magin的重叠问题</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 400px;
+            height: 400px;
+            border: 3px solid #000;
+        }
+        .box div {
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+        }
+        .content1 .item1 {
+            background: red;
+            margin-bottom: 50px;
+        }
+        /* magin属性，上下值有重叠性，谁的值大就用谁，左右没有 */
+        .content1 .item2 {
+            background: pink;
+            margin-top: 50px;
+        }
+        .content2 .item1 {
+            background: red;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+        .content2 .item2 {
+            background: pink;
+            display: inline-block;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>盒子的垂直margin：重叠，谁大设置谁</h1>
+    <div class="box content1">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+    </div>
+    <h1>盒子的水平margin：不重叠</h1>
+    <div class="box content2">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+    </div>
+</body>
+</html>

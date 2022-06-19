@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 设父盒子宽高200，子盒子宽高50，要求外间距上下左右各50 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .one {
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* 因为浏览器解析会有一个传递问题，所以第一个子元素紧贴父元素
+            我们需要给父元素加：
+            1.边框
+            2.只能给padding-top加距离
+            3.加overflow: hidden */
+            /* border-top: 1px solid black;  */
+            /* padding-top: 1px; */
+            overflow: hidden;
+
+        }
+        .box1 {
+             width: 50px;
+             height: 50px;
+             background: blue;
+             margin-top: 75px;
+             margin-left: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+    <div class="box1"></div>
+   </div>
+</body>
+</html>

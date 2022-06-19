@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css颜色设置</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+        }
+        /* 1.单词颜色 */
+        .box1 {
+            background: red;
+        }
+        /*2. 16进制颜色
+        0 1 2 3 4 5 6 7 8 9 a b c d e f  是16进制
+        从这16个数值中组合
+
+        每两个相同值可以进行简写
+        #000000  #000  黑色
+        #ffffff  #fff  白色
+        */
+        .box2 {
+            background: #e4bd4e;
+        }
+        /*3. rgb颜色  红绿蓝三原色 
+            r 红
+            g 绿
+            b 蓝
+            */
+        .box3 {
+            background: rgb(14,14,14);
+        }
+        /* 4.rgba 
+        r 红  最大值是255  255是黑色
+        g 绿
+        b 蓝
+        a  透明度  0-1 */
+        .box4 {
+            background: rgba(14,14,14,.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

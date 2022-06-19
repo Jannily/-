@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格属性</title>
+    <style>
+        table {
+            /* width: 400px; */
+            height: 300px;
+            /* border: 2px solid #000; */
+
+            border-spacing: 10px;
+            /* 1.单元格之间的间隙，代替cellspacing ，不能合并*/
+
+          /* border-collapse: collapse; */
+            /* 2.合并相邻边框线 */
+
+            table-layout: fixed;
+            /* 3.固定单元格的宽度（平分设置） */
+
+            empty-cells: hide;
+            /* 4.单元格没有内容隐藏，占位作用 */
+
+            text-align: center;
+
+        } 
+        th {
+            border: 1px solid #000;
+        }
+        td {
+            border: 1px solid #000;
+            vertical-align: top;
+            /* padding: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>学院信息表</caption>
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>身高</th>
+            <th>备注</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>曹操曹操曹操</td>
+            <td>男</td>
+            <td>50</td>
+            <td>170</td>
+            <td>丞相</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td>男</td>
+            <td>50</td>
+            <td>170</td>
+            <td>丞相</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>曹操</td>
+            <td>男</td>
+            <td>50</td>
+            <td>170</td>
+            <td>丞相</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>曹操</td>
+            <td>男</td>
+            <td>50</td>
+            <td>170</td>
+            <td>丞相</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>曹操</td>
+            <td>男</td>
+            <td>50</td>
+            <td>170</td>
+            <td>丞相</td>
+          </tr>
+    </table>
+</body>
+</html>

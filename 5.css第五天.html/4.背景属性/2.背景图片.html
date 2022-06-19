@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            background-image: url(img.jpg);
+            /* 背景不平铺 */
+            background-repeat: no-repeat;
+            /* 默认平铺 */
+            background-repeat: repeat;
+            /* 水平平铺 */
+            background-repeat: repeat-x;
+            /* 垂直平铺 */
+            background-repeat: repeat-y;
+            /* 设置背景图片的位置
+            水平  left  right  center
+            垂直   top  bottom  center
+
+            用px
+            水平   正右负左
+            垂直   正下负上
+
+            %  盒子大小-图片大小=剩下百分比
+            注意在：如果位置只设置水平，垂直是按center设置 */
+            background-position: right bottom;
+            /* 在右下角的位置 */
+            background-position: center;
+            background-position: 30px 50px;
+            background-position: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>我挺好</div>
+</body>
+</html>
