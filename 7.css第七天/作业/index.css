@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?ul63is');
+    src:  url('fonts/icomoon.eot?ul63is#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?ul63is') format('truetype'),
+      url('fonts/icomoon.woff?ul63is') format('woff'),
+      url('fonts/icomoon.svg?ul63is#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 网页的头部 */
+.header {
+    width: 961px;
+    height: 98px;
+    background: #fff;
+    border: 1px solid #000;
+    margin: 0 auto;
+    /* 让网页居中 */
+    
+}
+img {
+ width: 281px;
+ height: 36px;
+ float: left;
+ margin-top: 34px;
+}
+.search {
+    float: right;
+    margin-top: 38px ;
+    width: 227px;
+    height: 29px; 
+}
+
+/* 网页的导航 */
+.nav-warp {
+    background: #fff;
+    /* width: 1310px; */
+    height: 56px;
+    border: 1px solid orange;
+    background: #323232;
+}
+.nav {
+    width: 960px;
+    height: 56px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.nav ul li {
+    float: left;
+    width: 119px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    border-right: 1px  solid;
+}
+a {
+    font-size: 12px;
+    color: #f8f8f8;
+}
+/* 网页的版心 */
+.banner {
+    width: 1346px;
+    height: 446px;
+    border: 1px solid green;
+    background: pink;
+    margin: 0 auto;
+}
+
+.company {
+    width: 960px;
+    height: 240px;
+    background: skyblue;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    
+}
+
+span {
+    float: right;
+    margin-right: 20px;
+}
+
+.news {
+    width: 475px;
+    height: 240px;
+    border: 1px solid #000;
+    float: left;
+}
+.product {
+    width: 230px;
+    height: 242px;
+    background: purple;
+    float: left;
+}
+.job {
+    width: 245px;
+    height: 242px;
+    float: left;
+    background: yellow;
+}
+.market {
+    width: 960px;
+    height: 260px;
+    background: red;
+    margin: 0 auto;
+}
+/* 网页的footer */
+

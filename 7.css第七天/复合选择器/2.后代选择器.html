@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        .warp P {
+            color: red;
+        }
+        .warp span {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>后代选择器</h1>
+    <!-- 用 父元素 空格 子元素
+        只要满足嵌套关系，不管是一层或多层，都可以选中
+    -->
+    <div class="warp">
+        <p>我是有爹的<span>娃</span></p>
+        <div><p>我爹是body</p></div>
+    </div>
+    <p>我爹是body</p>
+</body>
+</html>

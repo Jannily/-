@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器的权重</title>
+</head>
+<body>
+    <!-- 权重：
+    基本选择器
+    ！important > 内联样式表 1000 > id选择器 100 > class选择器 > 标签名 1 >
+    * 通配符选择器 0
+
+    复合选器：
+    父子和后代：计算所有选择器的权重值和
+       例子：
+         .box > p       10+1=11
+         #box span      100+1=101
+         .box .contet   10+10=20
+         
+    群组选择器
+          .box {}
+          p,
+          .box {}  看书写顺序，谁在下面谁的高
+
+     交集选择器
+          div.box       1+10=11
+          
+     兄弟选择器
+          .box+p         10+1=11
+          
+     伪类选择器（10）
+        .box:hover      10+10=20      -->
+             
+</body>
+</html>

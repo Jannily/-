@@ -9,34 +9,37 @@
         .box {
             width: 200px;
             height: 200px;
-            background: red;
-        }
-        div:link {
-            background: green;
-        }
-        div:visited {
-            background: pink;
-            
+            border: 2px dashed #000;
         }
         div:hover {
             background: black;
         }
         div:active {
+            width: 100px;
             background: orange;
         }
         a:link {
-            background: green;
+            color: green;
         }
         a:visited {
-            background: pink;
-            
+            color: pink;
         } 
-
-        
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: yellow;
+        }
     </style>
 </head>
 <body>
+    <!-- 伪类选择器权重为10：主要设置的是元素在什么状态下设置的样式
+
+    :link 未访问
+    :visited 已访问 
+    :hover  鼠标移入
+    :active   鼠标点击按下，点击激活 -->
     <div class="box"></div>
-    <div><a href="http://baidu.com">百度</a></div>
+    <a href="http://baidu.com">百度</a>
 </body>
 </html>

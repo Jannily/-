@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>父子选择器</title>
+    <style>
+        .warp > p {
+            color: red;
+        }
+        .warp > p > span {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>父子选择器</h1>
+    <!-- 用 父元素 > 子元素
+    通过父元素往下选择一层，选择自己的子元素 -->
+    <div class="warp">
+        <p>我是有爹的<span>娃</span></p>
+    </div>
+    <p>我爹是body</p>
+</body>
+</html>

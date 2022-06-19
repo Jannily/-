@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距设置auto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            margin: 0 auto;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background: red;
+            display: inline;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>元素设置magin:0 auto</h1>
+    <!-- 块元素水平居中：magin:0 auto
+
+        行内和行内块元素水平居中：
+          给父元素加text-align: center
+     -->
+    <h2>块元素</h2>
+    <div class="box1"></div>
+    <h2>行内块元素</h2>
+    <div class="box2"></div>
+    <h2>行内元素</h2>
+    <div class="box3">行内元素</div>
+</body>
+</html>
